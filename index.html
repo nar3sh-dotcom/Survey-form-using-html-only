@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+</head>
+<body>
+   <h1 align="center">Employee Interests Survey Form</h1>
+
+    <p align="center">
+            <label for="First name">Enter your first name:</label>
+            <input type="text" placeholder="Your text here" autocomplete="on" required="true" name="first name" id="first name">
+        </p>
+        <p align="center">
+            <label for="Department">Enter Your Department:</label>
+            <input type="text" placeholder="Your text here" name="department" id="department" required>
+        </p>
+    
+    <p align="center">
+            <label for="description">Tell Us More About Yourself:</label>
+            <textarea name="description" id="" cols="35" rows="5" placeholder="Your text here"></textarea>
+    </p>
+    <p align="center">
+                Do you exercise at home?
+            <input type="radio" name="option" id="yes" >
+            <label for="yes">Yes</label>
+            <input type="radio" name="option" id="no"> 
+            <label for="no">No </label>
+        </p>
+        <p align="center">
+            How do you like to read about your favourite topics?<br>
+            <input type="checkbox" id="Books">
+            <label>Books</label>
+            <input type="checkbox" id="Onine Resources">
+            <label>Online resources</label>
+            <input type="checkbox" id="Phone apps">
+            <label>Phone apps</label>
+            <input type="checkbox" id="Magazines">
+            <label>Magazines</label>
+            <br>
+            What genre of movies do you like?
+            <label >
+                <select name="genre" id="genre" multiple sizes="3">
+                    <optgroup label="Genre" >
+                        <option value="1">Action</option>
+                        <option value="2">History</option>
+                        <option value="3" selected>Comedy</option>
+                        <option value="4">Adventure</option>
+
+                    </optgroup>
+                </select>
+            </label>
+        </p>
+    <p align="center">
+       <button type="submit" formaction="https://httpbin.org/post" formmethod="get">Submit</button>
+    </p>  
+
+</body>
+</html>
